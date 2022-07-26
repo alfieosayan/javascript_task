@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    // * {
+    //     border: 1px solid red;
+    // }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        input[type="text"] {
+            background: #d9d9d9;
+            border: none;
+            font: 12px/16px "Poppins";
+            font-weight: 500;
+            height: 36px;
+            margin-right: 10px;
+            padding: 10px 15px;
+            width: 269px;
+        }
+
+        .input_error {
+            border: 1px solid red !important;
+        }
+
+        .input_valid {
+            border: 1px solid green !important;
+        }
+
+        #first_name,
+        #last_name {
+            width: 154px;
+        }
+    
+        button {
+            background: #d9d9d9;
+            border: none;
+            color: black;
+            font: 12px/16px "Poppins";
+            font-weight: 500;
+            height: 36px;
+            margin-left: 20px;
+            width: 85px;
+        }
+
+        
+    }
+
+    #upper_table,
+    #lower_table {
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        height: 300px;
+        margin-bottom: 40px;
+        margin: 20px auto;
+        overflow: auto;
+        padding: 30px 40px;
+        width: 810px;
+    }
+
+    table {
+        width: 100%;
+
+        thead {
+
+            > tr {
+                display: flex;
+                font: 12px/16px "Poppins";
+                font-weight: 500;
+                padding: 0 5px;
+                padding-bottom: 12px;
+
+                th {
+                    margin-right: 30px;
+                }
+
+                th:last-child {
+                    margin-right: 20px;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        tbody {
+            
+            > tr {
+                align-items: center;
+                align-items: center;
+                background-color: #d9d9d9;
+                display: flex;
+                font: 12px/16px "Poppins";
+                font-weight: 500;
+                height: 49px;
+                padding: 0 15px;
+
+                td {
+                    margin-right: 10px;
+                    width: 85px;
+                }
+
+                td:nth-child(3) {
+                    flex: 1;
+                }
+
+                td:last-child {
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-left: auto;
+                    margin-right: 0;
+                    width: 120px;
+
+                    button[type="button"] {
+                        background-color: transparent;
+                        border: none;
+                        color: #0066FF;
+                    }
+
+                    .arrow_down_icon {
+                        background: url(/assets/images/keyboard_arrow_down.svg) no-repeat center center / contain;
+                        display: inline-block;
+                        height: 24px;
+                        width: 24px;
+                    }
+
+                    .arrow_up_icon {
+                        background: url(/assets/images/keyboard_arrow_up.svg) no-repeat center center / contain;
+                        display: inline-block;
+                        height: 24px;
+                        width: 24px;
+                    }
+
+                    .delete_icon {
+                        background: url(/assets/images/delete_icon.svg) no-repeat center center / contain;
+                        display: inline-block;
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Task</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="form">
+            <form action="" id="simple_form" method="post">
+                <input type="text" name="first_name" id="first_name" placeholder="First name ...">
+                <input type="text" name="last_name"id="last_name" placeholder="Last name ...">
+                <input type="text" name="email" id="email" placeholder="Email Address ...">
+                <button type="button" id="reset_form_btn">RESET</button>
+                <button type="submit" id="add_form_btn">ADD</button>
+            </form>
+        </div>
+        <div id="upper_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>FIRST NAME</th>
+                        <th>LAST NAME</th>
+                        <th>EMAIL ADDRESS</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="upper_data_table">
+                    <tr id="1">
+                        <td>Alfie</td>
+                        <td>Osayan</td>
+                        <td>aosayan@village88.com</td>
+                        <td>
+                            <button id="edit_data_btn" type="button"><span>Edit</span></button>
+                            <button type="button"><span class="arrow_down_icon"></span></button>
+                            <button id="delete_data_btn" type="button"><span class="delete_icon"></span></button>
+                        </td>
+                    </tr>
+                    <tr id="2">
+                        <td>Ruel</td>
+                        <td>Ytac</td>
+                        <td>ruel.ytac@village88.com</td>
+                        <td>
+                            <button id="edit_data_btn" type="button"><span>Edit</span></button>
+                            <button type="button"><span class="arrow_down_icon"></span></button>
+                            <button id="delete_data_btn" type="button"><span class="delete_icon"></span></button>
+                        </td>
+                    </tr>
+                    <tr id="3">
+                        <td>Michael</td>
+                        <td>Choi</td>
+                        <td>mchoi@village88.com</td>
+                        <td>
+                            <button id="edit_data_btn" type="button"><span>Edit</span></button>
+                            <button type="button"><span class="arrow_down_icon"></span></button>
+                            <button id="delete_data_btn" type="button"><span class="delete_icon"></span></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="lower_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>FIRST NAME</th>
+                        <th>LAST NAME</th>
+                        <th>EMAIL ADDRESS</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="lower_data_table">
+                    <tr id="4">
+                        <td>Test1</td>
+                        <td>Test1LN</td>
+                        <td>test1@village88.com</td>
+                        <td>
+                            <button id="edit_data_btn" type="button"><span>Edit</span></button>
+                            <button type="button"><span class="arrow_up_icon"></span></button>
+                            <button id="delete_data_btn" type="button"><span class="delete_icon"></span></button>
+                        </td>
+                    </tr>
+                    <tr id="5">
+                        <td>Test2</td>
+                        <td>Test3LN</td>
+                        <td>test2@village88.com</td>
+                        <td>
+                            <button id="edit_data_btn" type="button"><span>Edit</span></button>
+                            <button type="button"><span class="arrow_up_icon"></span></button>
+                            <button id="delete_data_btn" type="button"><span class="delete_icon"></span></button>
+                        </td>
+                    </tr>
+                    <tr id="6">
+                        <td>Test3</td>
+                        <td>Test3LN</td>
+                        <td>test3@village88.com</td>
+                        <td>
+                            <button id="edit_data_btn" type="button"><span>Edit</span></button>
+                            <button type="button"><span class="arrow_up_icon"></span></button>
+                            <button id="delete_data_btn" type="button"><span class="delete_icon"></span></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
